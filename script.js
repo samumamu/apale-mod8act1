@@ -11,8 +11,7 @@ fname.innerHTML = prompt('Please Type your Full Name:');
 sex();
 username.innerHTML = prompt('Please Type your Username:');
 desc.innerHTML = prompt('Write a brief description about yourself:');
-year.innerHTML = prompt('What year were you born?');
-age.innerHTML = prompt('How old are you?');
+age.innerHTML = 2023 - parseFloat(year.innerHTML = prompt('What year were you born?'));
 pfp();
 
 function sex()
@@ -38,6 +37,11 @@ function pfp()
     if(canorcon = confirm('Do you want to set a profile picture?'))
     {
         pfpsrc = prompt('Please type the link/source of the image:');
+        alert('Profile Complete!')
+    }
+    else
+    {
+        alert('Profile Complete!')
     }
     ppic.src = pfpsrc;
 }
